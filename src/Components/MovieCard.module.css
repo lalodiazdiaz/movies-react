@@ -1,7 +1,9 @@
 .movieCard {
   list-style: none; /* eliminar puntos de un li*/
-  font-size: 2rem; /* tamaño de texto*/
   text-align: center;
+}
+.movieCard:hover {
+  opacity: 0.6;
 }
 
 .movieImage {
