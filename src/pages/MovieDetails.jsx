@@ -7,7 +7,6 @@ import { Spinner } from "../Components/Spinner";
 export function MovieDetails() {
   const { movieId } = useParams();
   const [isLoading, setIsLoading] = useState(true);
-  console.log(movieId);
 
   const [movieD, setMovieD] = useState(null);
   useEffect(() => {

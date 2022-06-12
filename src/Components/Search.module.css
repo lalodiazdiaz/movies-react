@@ -9,6 +9,8 @@
   height: 30px;
   border-radius: 10px;
   padding: 5px 30px 5px 10px;
+  font-size: 1.2rem;
+  border: 1px solid white;
 }
 .searchButton {
   position: absolute;
@@ -18,4 +20,11 @@
   height: 100%;
   border: none;
   background: none;
+}
+
+.searchInput:focus,
+.searchButton:focus {
+  outline: none;
+  border: 1px solid #f88ec2;
+  box-shadow: 0 0 5px #ebbed4;
 }
