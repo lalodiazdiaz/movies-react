@@ -5,7 +5,7 @@
 }
 
 .col {
-  max-width: 400px;
+  max-width: 500px;
   margin: 15px;
   height: auto;
   height: 80%;
@@ -21,4 +21,10 @@
 
 .firstItem {
   margin-top: 0;
+}
+
+@media (max-width: 500px) {
+  .col {
+    max-width: 320px;
+  }
 }
