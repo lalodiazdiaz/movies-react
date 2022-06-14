@@ -1,6 +1,7 @@
 .detailsContainer {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -9,6 +10,7 @@
   margin: 15px;
   height: auto;
   height: 80%;
+  width: 100%;
 }
 
 .movieImage {
@@ -22,9 +24,13 @@
 .firstItem {
   margin-top: 0;
 }
+p {
+  text-align: left;
+}
 
 @media (max-width: 500px) {
   .col {
     max-width: 320px;
+    width: 100%;
   }
 }

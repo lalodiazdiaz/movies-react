@@ -22,6 +22,8 @@ export function MovieDetails() {
     return <Spinner />;
   }
 
+  const backurl = getMoviesImg(movieD.backdrop_path, 500);
+
   const imgUrl = getMoviesImg(movieD.poster_path, 500);
 
   return (
@@ -44,6 +46,28 @@ export function MovieDetails() {
           <strong>Description: </strong>
           {movieD.overview}
         </p>
+      </div>
+      <div className={`${styles.col} ${styles.movieDetails}`}>
+        <p className={styles.firstItem}>
+          <strong>Original language: </strong> {movieD.original_language}
+        </p>
+
+        <p>
+          <strong>Release date: </strong>
+          {movieD.release_date}
+        </p>
+
+        {movieD.vote_average < 6.5 ? (
+          <p>
+            <strong>Vote average: </strong>
+            {movieD.vote_average} 👎🏻
+          </p>
+        ) : (
+          <p>
+            <strong>Vote average: </strong>
+            {movieD.vote_average} 👍🏻
+          </p>
+        )}
       </div>
     </div>
   );

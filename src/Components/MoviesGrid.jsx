@@ -25,6 +25,7 @@ export function MoviesGrid({ search }) {
     });
   }, [search, page]);
 
+  console.log(movies);
   if (!isLoading && movies.length === 0) {
     return <Empty />;
   }
