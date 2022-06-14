@@ -1,9 +1,7 @@
 import styles from "./Search.module.css";
 import { FaSearch } from "react-icons/fa";
-import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useQuery } from "../hooks/useQuery";
-import { useEffect } from "react";
 
 export function Search() {
   const history = useHistory();
