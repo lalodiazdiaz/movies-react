@@ -1,9 +1,8 @@
 import styles from "./Search.module.css";
 import { FaSearch } from "react-icons/fa";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 export function Search() {
-  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
   };
