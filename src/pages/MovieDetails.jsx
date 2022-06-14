@@ -22,8 +22,6 @@ export function MovieDetails() {
     return <Spinner />;
   }
 
-  const backurl = getMoviesImg(movieD.backdrop_path, 500);
-
   const imgUrl = getMoviesImg(movieD.poster_path, 500);
 
   return (
